@@ -7,14 +7,14 @@ import { FaRegBuilding } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="hero-bg text-white text-5xl z-20 flex flex-col justify-center px-8 space-y-20">
+    <div className="hero-bg text-white text-5xl z-20 flex flex-col justify-center px-8 space-y-28">
       <div>
-        <h2 className="text-white text-6xl leading-[1.5]">
+        <h2 className="text-white text-7xl leading-[1.5]">
           <span className="font-semibold">Discover</span> Your Dream <br />
           Residence <span className="font-semibold">With Us</span>
         </h2>
       </div>
-      <div className="mt-11 flex items-center gap-6">
+      <div className="mt-11 flex items-center gap-6 ml-8">
         <div className="flex gap-4 items-center">
           <MapPin className="" size={30}/>
           <p className="text-white text-xl">Location</p>
