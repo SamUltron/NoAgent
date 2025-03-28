@@ -14,7 +14,7 @@ const Hero = () => {
           Residence <span className="font-semibold">With Us</span>
         </h2>
       </div>
-      <div className="mt-11 flex items-center gap-6 ml-8">
+      <div className="mt-11 flex items-center gap-6 ml-5">
         <div className="flex gap-4 items-center">
           <MapPin className="" size={30}/>
           <p className="text-white text-xl">Location</p>
