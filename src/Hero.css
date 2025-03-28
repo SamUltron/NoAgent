@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-bg {
+  height: 50vh;
+  width: 100%;
+  background-image: url("./assets/2\ Bedroom\ 1\ Bathroom\ House\ for\ rent\ in\ Phoenix\ Park\ Village\ 2\,\ St_\ Catherine\,\ Jamaica\ -\ PropertyCozy.com.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
