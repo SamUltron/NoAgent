@@ -1,6 +1,7 @@
 // Iine color code 
 // CBCBCB
 
+import Header from "./components/Header"
 import Hero from "./components/Hero"
 
 // Text color to code
@@ -12,6 +13,7 @@ import Hero from "./components/Hero"
 function App() {
   return (
     <div>
+      <Header/>
       <Hero/>
     </div>
   )
