@@ -1,6 +1,6 @@
 import React from "react";
 import "../Hero.css";
-import { ArrowBigDown, ArrowBigDownIcon, ArrowDown, ArrowDownAz, ArrowDownLeft, LocateIcon, MapIcon, MapPin, Search } from "lucide-react";
+import { MapPin, Search } from "lucide-react";
 import { IoIosArrowDown } from "react-icons/io";
 import { TbCurrencyNaira } from "react-icons/tb";
 import { FaRegBuilding } from "react-icons/fa";
