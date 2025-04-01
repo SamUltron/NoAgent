@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const ProductList = () => {
 
   const [products, setProducts] = useState([]);
-  const [isFull, setIsfull] = useState(false);
+  const [isFull, setIsFull] = useState(false);
 
   useEffect(() => {
     const apiUrl = !isFull ? "http://localhost:4000/details?_limit=3" : "http://localhost:4000/details";
@@ -29,7 +29,7 @@ const ProductList = () => {
         />
       ))}
     </div>
-      <button className="flex mx-auto bg-[#CBA135] p-3 rounded-lg mt-10 text-white text-xl items-center justify-between gap-2" onClick={() => setIsfull(prev => !prev)}>View All Properties <ArrowRight/></button>
+      <button className="flex mx-auto bg-[#CBA135] p-3 rounded-lg mt-10 text-white text-xl items-center justify-between gap-2" onClick={() => setIsFull(prev => !prev)}>View All Properties <ArrowRight/></button>
     </>
   );
 };
