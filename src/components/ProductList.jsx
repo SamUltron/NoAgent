@@ -22,13 +22,18 @@ const ProductList = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-3 gap-8 mt-10 transition duration-1000 ease-in-out">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <div
+          key={product.id}
+          className="transform transition-all duration-500 hover:scale-105"
+        >
+          <ProductCard product={product} />
+        </div>
         ))}
       </div>
       <button
-        className="flex mx-auto bg-[#CBA135] p-3 rounded-lg mt-10 text-white text-xl items-center justify-between gap-2"
+        className="flex mx-auto bg-[#CBA135] p-3 rounded-lg mt-10 text-white text-xl items-center justify-between gap-2 focus:outline-none hover:bg-[#edba38]"
         onClick={() => setIsFull((prev) => !prev)}
       >
         {isFull ? "View Less" : "View All Properties"} <MdOutlineKeyboardArrowRight  size={30}/>

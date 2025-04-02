@@ -1,9 +1,11 @@
 import React from 'react'
+import logo from "../assets/Frame 5.png"
 
 const Header = () => {
   return (
     <nav className='flex bg-[#f5f5f5] justify-between items-center py-5 px-8'>
-        <div>
+        <div className="flex items-center justify-center gap-x-3">
+          <img src={logo} alt="" />
             <h2 className='font-semibold text-3xl'>NoAgent</h2>
         </div>
         <div className='space-x-8 text-2xl'>

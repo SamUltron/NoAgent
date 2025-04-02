@@ -11,7 +11,7 @@ const OurUser = () => {
       </p>
       <div className='grid grid-cols-3 gap-6 mt-10 px-4'>
         {users.map((user) =>(
-            <UserInfoCard users={user}/>
+            <UserInfoCard key={user.id} users={user}/>
         ))}
       </div>
     </div>

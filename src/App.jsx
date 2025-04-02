@@ -2,6 +2,7 @@ import Header from "./components/Header"
 import Hero from "./components/Hero"
 import ProductCard from "./components/ProductCard"
 import ProductList from "./components/ProductList"
+import Choose from "./pages/Choose"
 import How from "./pages/How"
 import OurUser from "./pages/OurUser"
 import Reason from "./pages/Reason"
@@ -33,6 +34,7 @@ function App() {
       <Hero/>
       <How/>
       <Reason/>
+      <Choose/>
       <OurUser/>
     </div>
   )
