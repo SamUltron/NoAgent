@@ -1,5 +1,5 @@
 import React from "react";
-// import { chooses } from "../data/chooses";
+
 import ChooseCard from "../components/ChooseCard";
 
 import { Calendar, Home, Shield } from "lucide-react"

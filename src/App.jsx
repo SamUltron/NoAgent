@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import ProductCard from "./components/ProductCard"
 import ProductList from "./components/ProductList"
 import Choose from "./pages/Choose"
+import GetIn from "./pages/GetIn"
 import How from "./pages/How"
 import OurUser from "./pages/OurUser"
 import Reason from "./pages/Reason"
@@ -36,6 +37,7 @@ function App() {
       <Reason/>
       <Choose/>
       <OurUser/>
+      <GetIn/>
     </div>
   )
 }
