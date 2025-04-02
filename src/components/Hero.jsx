@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="hero-bg text-white text-5xl z-20 flex flex-col justify-center px-8 space-y-28">
       <div>
-        <h2 className="text-white text-7xl leading-[1.5]">
+        <h2 className="text-white text-7xl leading-[1.2]">
           <span className="font-semibold">Discover</span> Your Dream <br />
           Residence <span className="font-semibold">With Us</span>
         </h2>

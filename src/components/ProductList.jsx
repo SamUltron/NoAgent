@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import { ArrowRight } from "lucide-react";
+
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const ProductList = () => {
