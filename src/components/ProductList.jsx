@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import { ArrowRight } from "lucide-react";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const ProductList = () => {
-
   const [products, setProducts] = useState([]);
   const [isFull, setIsFull] = useState(false);
 
   useEffect(() => {
-    const apiUrl = !isFull ? "http://localhost:4000/details?_limit=3" : "http://localhost:4000/details";
+    const apiUrl = !isFull
+      ? "http://localhost:4000/details?_limit=3"
+      : "http://localhost:4000/details";
     fetch(apiUrl)
       .then((res) => res.json())
       .then((data) => {
@@ -18,18 +20,19 @@ const ProductList = () => {
       .catch((error) => console.error(error.message));
   }, [isFull]);
 
-
   return (
     <>
-    <div className="grid grid-cols-3 gap-8 mt-10">
-      {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-        />
-      ))}
-    </div>
-      <button className="flex mx-auto bg-[#CBA135] p-3 rounded-lg mt-10 text-white text-xl items-center justify-between gap-2" onClick={() => setIsFull(prev => !prev)}>View All Properties <ArrowRight/></button>
+      <div className="grid grid-cols-3 gap-8 mt-10">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+      <button
+        className="flex mx-auto bg-[#CBA135] p-3 rounded-lg mt-10 text-white text-xl items-center justify-between gap-2"
+        onClick={() => setIsFull((prev) => !prev)}
+      >
+        {isFull ? "View Less" : "View All Properties"} <MdOutlineKeyboardArrowRight  size={30}/>
+      </button>
     </>
   );
 };
