@@ -1,0 +1,32 @@
+/* Add to your CSS or Tailwind config */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Define the animation for fade and upward movement */
+@keyframes fadeInFromGround {
+  0% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.3); /* Adjust this for more/less upward movement */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-in-from-ground {
+  animation: fadeInFromGround both;
+  animation-timeline: view(70% 10%);
+}
+
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  

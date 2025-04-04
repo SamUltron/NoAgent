@@ -1,5 +1,7 @@
 import React from 'react'
-
+import face from "../assets/Button.png"
+import twitter from "../assets/Button (1).png"
+import insta from "../assets/Button (2).png"
 import { LuMapPin, LuPhone } from 'react-icons/lu'
 import { MdOutlineMail } from 'react-icons/md'
 
@@ -17,17 +19,14 @@ const Touch = () => {
                 </li>
                 <li className='flex items-center gap-2 text-xl text-[#333]'>
                 <LuMapPin color="#CBA135"/> 123 Innovation Street, Tech City
-                <img src="../assets/Button.png" alt="" className='w-4'/>
                 </li>
             </ul>
-            <div>
-                <img src="../assets/Button(1).png" alt="" />
-                <img src="../assets/Button(2).png" alt="" />
-
+            <div className='flex items-center gap-5'>
+                <img src={face} alt="" className=''/>
+                <img src={twitter} alt="" />
+                <img src={insta} alt="" />
             </div>
         </div>
-    // <div>
-    // </div>
   )
 }
 

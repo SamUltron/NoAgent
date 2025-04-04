@@ -1,6 +1,7 @@
 import { FileText, Info, Search } from "lucide-react";
 import React from "react";
 import HowCard from "../components/HowCard";
+import "../fade.css"
 
 const cards = [
   {
@@ -33,7 +34,7 @@ const How = () => {
         We've simplified the rental process by removing agents and connecting
         you directly with property owners.
       </p>
-      <div className="grid grid-cols-3 gap-8 mt-20 px-2">
+      <div className="grid grid-cols-3 gap-8 mt-20 px-2 fade-in-from-ground">
         {cards.map((card) => (
           <HowCard key={card.id} card={card} />
         ))}

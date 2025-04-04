@@ -3,7 +3,6 @@ import React from 'react'
 const UserInfoCard = ({users}) => {
   const {image, name, userDescription, testimony } = users;
   
-  
   return (
     <div className='bg-[#f4f4f4] rounded-md py-10 px-4 flex flex-col space-y-5'>
       <div className='flex items-center gap-2'>

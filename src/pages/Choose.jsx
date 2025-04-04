@@ -1,8 +1,7 @@
 import React from "react";
-
 import ChooseCard from "../components/ChooseCard";
-
-import { Calendar, Home, Shield } from "lucide-react"
+import { Calendar, Home, Shield } from "lucide-react";
+import "../fade.css"
 
 const chooses = [
 {
@@ -43,7 +42,7 @@ const Choose = () => {
       We're revolutionizing the rental market by eliminating unnecessary costs and streamlining
       the process.
       </p>
-      <div className="grid grid-cols-4 gap-8 mt-20 px-2">
+      <div className="grid grid-cols-4 gap-8 mt-20 px-2 fade-in-from-ground">
         {chooses.map((choose) => (
           <ChooseCard key={choose.id} choose={choose} />
         ))}
