@@ -1,6 +1,6 @@
 const ProductCard = ({ product }) => {
   return (
-    <div className="border rounded-xl flex flex-col flex-shrink-0 w-full">
+    <div className="border rounded-xl flex flex-col flex-shrink-0">
   <img 
     src={product.image || 'path/to/fallback-image.jpg'} 
     alt={product.name || 'Product Image'} 

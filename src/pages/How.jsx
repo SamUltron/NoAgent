@@ -34,7 +34,7 @@ const How = () => {
         We've simplified the rental process by removing agents and connecting
         you directly with property owners.
       </p>
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 mt-20 px-2 fade-in-from-ground relative z-0">
+      <div className="grid lg:grid-cols-3 w-full grid-cols-1 gap-8 mt-20 px-2 fade-in-from-ground relative z-0">
         {cards.map((card) => (
           <HowCard key={card.id} card={card} />
         ))}

@@ -27,11 +27,11 @@ const ProductList = () => {
 
   return (
     <>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 sm:gap-20 md:gap-10 gap-8 mt-10 transition duration-1000 ease-in-out">
+      <div className="grid md:grids-cols-1 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 sm:gap-20 md:gap-10 gap-8 mt-10 transition duration-1000 ease-in-out max-w-full">
   {products.map((product) => (
     <div
       key={product.id}
-      className="transform transition-all duration-500 hover:scale-105 flex-shrink-0 w-full"
+      className="transform transition-all duration-500 hover:scale-105 flex-shrink-0"
     >
       <ProductCard product={product} />
     </div>
