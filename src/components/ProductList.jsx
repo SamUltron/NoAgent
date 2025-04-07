@@ -8,17 +8,17 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
   const [isFull, setIsFull] = useState(false);
 
+  // const apiUrl = !isFull
+  //   ? "http://localhost:4000/details?_limit=3"
+  //   : "http://localhost:4000/details";
+  // fetch(apiUrl)
+  //   .then((res) => res.json())
+  //   .then((data) => {
+  //     console.log(data);
+  //     setProducts(data);
+  //   })
+  //   .catch((error) => console.error(error.message));
   useEffect(() => {
-    // const apiUrl = !isFull
-    //   ? "http://localhost:4000/details?_limit=3"
-    //   : "http://localhost:4000/details";
-    // fetch(apiUrl)
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //     setProducts(data);
-    //   })
-    //   .catch((error) => console.error(error.message));
 
     const apiData = isFull ? details.slice(0, 4) : details.slice(0, 6)
     setProducts(apiData)
