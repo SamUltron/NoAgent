@@ -22,7 +22,7 @@ const ProductList = () => {
 
   return (
     <>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-20 md:gap-10 gap-8 mt-10 transition duration-1000 ease-in-out">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 sm:gap-20 md:gap-10 gap-8 mt-10 transition duration-1000 ease-in-out">
   {products.map((product) => (
     <div
       key={product.id}

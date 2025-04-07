@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
     <h3 className="text-3xl font-semibold truncate">{product.title}</h3>
     <p className="text-[#71717A] text-xl truncate">{product.description}</p>
   
-    <div className="flex justify-between items-center gap-2 md:flex-row flex-col">
+    <div className="flex justify-between items-center gap-2 md:flex-row">
       <p className="font-semibold md:text-3xl sm:text-xl">&#8358; {product.price}</p>
       <button className="bg-[#CBA135] p-3 rounded-3xl text-white whitespace-nowrap max-w-full overflow-hidden text-ellipsis">
         {product.button || 'View Details'}
