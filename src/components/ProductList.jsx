@@ -18,6 +18,7 @@ const ProductList = () => {
   //     setProducts(data);
   //   })
   //   .catch((error) => console.error(error.message));
+  
   useEffect(() => {
 
     const apiData = isFull ? details.slice(0, 4) : details.slice(0, 6)
