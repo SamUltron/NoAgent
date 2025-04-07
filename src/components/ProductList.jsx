@@ -18,10 +18,10 @@ const ProductList = () => {
   //     setProducts(data);
   //   })
   //   .catch((error) => console.error(error.message));
-  
+
   useEffect(() => {
 
-    const apiData = isFull ? details.slice(0, 4) : details.slice(0, 6)
+    const apiData = isFull ? details.slice(0, 3) : details.slice(0, 6)
     setProducts(apiData)
   }, [isFull]);
 
