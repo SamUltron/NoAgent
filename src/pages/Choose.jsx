@@ -36,7 +36,7 @@ const chooses = [
 
 const Choose = () => {
   return (
-    <div className="flex flex-col items-center bg-[#F5F5F5] h-1/2 mt-20 py-20">
+    <div className="flex flex-col items-center bg-[#F5F5F5] h-1/2 mt-20 py-20 px-10">
       <h2 className="md:text-6xl text-5xl text-center font-semibold">Why Choose NoAgent?</h2>
       <p className="text-[#333] max-w-5xl text-center mt-10 text-xl md:text-2xl">
       We're revolutionizing the rental market by eliminating unnecessary costs and streamlining

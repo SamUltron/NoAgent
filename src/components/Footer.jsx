@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#F5F5F5] mt-10">
-      <div className="flex flex-wrap justify-between gap-10 md:gap-0 p-10">
+      <div className="flex flex-wrap justify-between gap-10 md:gap-0 py-20 px-10">
         <div className="space-y-3 md:w-1/4">
           <h2 className="md:text-3xl text-2xl font-semibold">NoAgent</h2>
           <p className="text-lg  hover:text-[#71717a]">

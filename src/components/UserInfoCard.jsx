@@ -5,7 +5,7 @@ const UserInfoCard = ({users}) => {
   
   return (
     <div className='bg-[#f4f4f4] rounded-md py-10 px-4 flex flex-col space-y-5'>
-      <div className='flex items-center gap-2'>
+      <div className='flex items-center md:gap-2 gap-4'>
         <img src={image} alt={name}  height={70} width={70}/>
         <div>
           <h4 className='font-bold text-xl text-[#333]'>{name}</h4>

@@ -28,7 +28,7 @@ const cards = [
 ];
 const How = () => {
   return (
-    <div className="flex flex-col items-center bg-[#F5F5F5] h-1/2 mt-20 relative z-0 py-20">
+    <div className="flex flex-col items-center bg-[#F5F5F5] h-1/2 mt-20 relative z-0 py-20 px-10">
       <h2 className="md:text-6xl text-5xl text-center font-semibold">How NoAgent Works</h2>
       <p className="text-[#333] max-w-5xl text-center mt-10 md:text-2xl text-xl">
         We've simplified the rental process by removing agents and connecting
