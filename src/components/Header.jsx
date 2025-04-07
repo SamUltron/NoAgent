@@ -35,7 +35,7 @@ const Header = () => {
               </button>
             </Link>
             <Link to="/signup">
-              <button className="text-xl font-semibold text-white bg-[#CBA135] rounded-lg py-3 px-6">
+              <button className="text-xl font-semibold text-white bg-[#CBA135] rounded-lg py-3 px-6 whitespace-nowrap">
                 Sign up
               </button>
             </Link>
