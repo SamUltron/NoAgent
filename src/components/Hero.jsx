@@ -7,9 +7,9 @@ import { FaRegBuilding } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="hero-bg h-[50vh] md:max-h-[60vh] text-white text-5xl flex flex-col justify-center py-20 px-8 space-y-28 absolute -z-10">
+    <div className="hero-bg min-h-[50vh] md:h-[70vh] text-white text-5xl flex flex-col justify-center py-20 px-8 space-y-28 absolute -z-10">
       <div>
-        <h2 className="text-white md:text-7xl text-4xl md:leading-[1.2] leading-[1.4] whitespace-nowrap">
+        <h2 className="text-white md:text-7xl text-4xl md:leading-[1.2] leading-[1.4]">
           <span className="font-semibold">Discover</span> Your Dream <br />
           Residence <span className="font-semibold">With Us</span>
         </h2>
