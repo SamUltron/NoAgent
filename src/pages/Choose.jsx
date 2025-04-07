@@ -42,7 +42,7 @@ const Choose = () => {
       We're revolutionizing the rental market by eliminating unnecessary costs and streamlining
       the process.
       </p>
-      <div className="grid md:grid-cols-4 grid-cols-1 gap-8 mt-20 px-2 fade-in-from-ground">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-8 mt-20 px-2 fade-in-from-ground">
         {chooses.map((choose) => (
           <ChooseCard key={choose.id} choose={choose} />
         ))}
