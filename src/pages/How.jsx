@@ -28,13 +28,13 @@ const cards = [
 ];
 const How = () => {
   return (
-    <div className="flex flex-col items-center bg-[#F5F5F5] h-1/2 mt-20 py-20">
-      <h2 className="text-6xl font-semibold">How NoAgent Works</h2>
-      <p className="text-[#333] max-w-5xl text-center mt-10 text-2xl">
+    <div className="flex flex-col items-center bg-[#F5F5F5] h-1/2 mt-20 relative z-0 py-20">
+      <h2 className="md:text-6xl text-5xl text-center font-semibold">How NoAgent Works</h2>
+      <p className="text-[#333] max-w-5xl text-center mt-10 md:text-2xl text-xl">
         We've simplified the rental process by removing agents and connecting
         you directly with property owners.
       </p>
-      <div className="grid grid-cols-3 gap-8 mt-20 px-2 fade-in-from-ground">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-8 mt-20 px-2 fade-in-from-ground relative z-0">
         {cards.map((card) => (
           <HowCard key={card.id} card={card} />
         ))}

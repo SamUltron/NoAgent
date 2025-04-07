@@ -4,8 +4,8 @@ import ProductList from "../components/ProductList";
 const Reason = () => {
   return (
     <div className="bg-white flex flex-col items-center py-40">
-      <h2 className="text-6xl font-semibold text-center">Featured Apartments</h2>
-      <p className="text-[#333] max-w-5xl text-center mt-5 text-2xl">
+      <h2 className="md:text-6xl text-5xl font-semibold text-center">Featured Apartments</h2>
+      <p className="text-[#333] max-w-5xl text-center mt-5 md:text-2xl text-xl">
       Discover our selection of verified properties available for immediate booking.
       </p>
       <ProductList/>

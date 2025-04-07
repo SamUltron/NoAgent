@@ -1,13 +1,12 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Header from "./components/Header"
-import Hero from "./components/Hero"
-import ProductCard from "./components/ProductCard"
-import ProductList from "./components/ProductList"
-import Choose from "./pages/Choose"
-import DownloadPage from "./pages/DownloadPage"
-import GetIn from "./pages/GetIn"
-import How from "./pages/How"
-import OurUser from "./pages/OurUser"
-import Reason from "./pages/Reason"
+import HomePage from "./pages/HomePage"
+// import Signup from "./components/Signin"
+// import Signin from "./components/Signin"
+import Signupp from "./components/Signupp"
+import Signinn from "./components/Signinn"
+import Footer from "./components/Footer"
+
 
 // Iine color code 
 // CBCBCB
@@ -31,16 +30,17 @@ import Reason from "./pages/Reason"
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Hero/>
-      <How/>
-      <Reason/>
-      <Choose/>
-      <OurUser/>
-      <GetIn/>
-      <DownloadPage/>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="/signup" element={<Signupp/>}/>
+          <Route path="/sign" element={<Signinn/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </>
   )
 }
 

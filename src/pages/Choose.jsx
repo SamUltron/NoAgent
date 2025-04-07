@@ -37,12 +37,12 @@ const chooses = [
 const Choose = () => {
   return (
     <div className="flex flex-col items-center bg-[#F5F5F5] h-1/2 mt-20 py-20">
-      <h2 className="text-6xl font-semibold">Why Choose NoAgent?</h2>
-      <p className="text-[#333] max-w-5xl text-center mt-10 text-2xl">
+      <h2 className="md:text-6xl text-5xl text-center font-semibold">Why Choose NoAgent?</h2>
+      <p className="text-[#333] max-w-5xl text-center mt-10 text-xl md:text-2xl">
       We're revolutionizing the rental market by eliminating unnecessary costs and streamlining
       the process.
       </p>
-      <div className="grid grid-cols-4 gap-8 mt-20 px-2 fade-in-from-ground">
+      <div className="grid md:grid-cols-4 grid-cols-1 gap-8 mt-20 px-2 fade-in-from-ground">
         {chooses.map((choose) => (
           <ChooseCard key={choose.id} choose={choose} />
         ))}
