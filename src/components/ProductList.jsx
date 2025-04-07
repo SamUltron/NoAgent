@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
+import {details} from "../data/detailss"
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -8,16 +9,19 @@ const ProductList = () => {
   const [isFull, setIsFull] = useState(false);
 
   useEffect(() => {
-    const apiUrl = !isFull
-      ? "http://localhost:4000/details?_limit=3"
-      : "http://localhost:4000/details";
-    fetch(apiUrl)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setProducts(data);
-      })
-      .catch((error) => console.error(error.message));
+    // const apiUrl = !isFull
+    //   ? "http://localhost:4000/details?_limit=3"
+    //   : "http://localhost:4000/details";
+    // fetch(apiUrl)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //     setProducts(data);
+    //   })
+    //   .catch((error) => console.error(error.message));
+
+    const apiData = isFull ? details.slice(0, 4) : details.slice(0, 6)
+    setProducts(apiData)
   }, [isFull]);
 
   return (
