@@ -21,11 +21,11 @@ const Header = () => {
           </Link>
 
           <div className="md:text-2xl md:flex items-center justify-center hidden gap-10">
-            <a href="#">Feature</a>
-            <a href="#" className="whitespace-nowrap">
+            <a href="#" className="hover:text-[#71717a]">Feature</a>
+            <a href="#" className="whitespace-nowrap hover:text-[#71717a]">
               How it works
             </a>
-            <a href="#">Benefits</a>
+            <a href="#" className="hover:text-[#71717a]">Benefits</a>
           </div>
 
           <div className="space-x-4 md:flex hidden">
