@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="bg-[#f5f5f5] py-5 px-8 max-h-32">
+      <nav className="bg-[#f5f5f5] py-5 px-8 max-h-32 ">
         <div className="flex justify-between items-center gap-10">
           <Link to="/">
             <div className="flex items-center justify-center gap-x-3">
@@ -42,7 +42,7 @@ const Header = () => {
           </div>
 
           <div
-            className="space-y-1 cursor-pointer md:hidden z-[1000]"
+            className="space-y-1 cursor-pointer md:hidden z-[4000]"
             onClick={handHamburger}
             // style={{
             //   zIndex: 1000, 
@@ -56,7 +56,7 @@ const Header = () => {
           <div
             className={`fixed right-0 top-0 w-[300px] h-full p-10 space-y-10 text-white text-center bg-[#f5f5f5] ${
               isOpen ? 'block' : 'hidden'
-            } pt-24 md:hidden z-[10]`}
+            } pt-24 md:hidden z-[1000]`}
           >
             <ul className="flex flex-col justify-between items-center gap-10 mb-32">
               <li onClick={handHamburger}>
@@ -93,7 +93,7 @@ const Header = () => {
 
           {isOpen && (
             <div
-              className="fixed inset-0 md:hidden bg-black opacity-50 z-[5]"
+              className="fixed inset-0 md:hidden bg-black opacity-50 z-[200]"
               onClick={handHamburger}
             />
           )}
