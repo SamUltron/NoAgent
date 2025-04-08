@@ -42,7 +42,7 @@ const ProductList = () => {
   className="flex mx-auto bg-[#CBA135] p-3 rounded-lg mt-10 text-white text-xl items-center justify-between gap-2 focus:outline-none hover:bg-[#edba38]"
   onClick={() => setIsFull((prev) => !prev)}
 >
-  {isFull ? "View Less" : "View All Properties"} <MdOutlineKeyboardArrowRight size={30} />
+  {isFull ? "View All Properties" : "View Less"} <MdOutlineKeyboardArrowRight size={30} />
 </button>
 
     </>

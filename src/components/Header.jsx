@@ -20,7 +20,7 @@ const Header = () => {
             </div>
           </Link>
 
-          <div className="md:text-2xl md:flex items-center justify-center hidden gap-6">
+          <div className="md:text-2xl md:flex items-center justify-center hidden gap-10">
             <a href="#">Feature</a>
             <a href="#" className="whitespace-nowrap">
               How it works
