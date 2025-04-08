@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className="text-lg pt-10 md:text-left text-center">© 2025 NoAgent Accommodation Rental. All rights reserved.</p>
+      <p className="text-lg pt-10 md:text-left text-center px-5 pb-5">© 2025 NoAgent Accommodation Rental. All rights reserved.</p>
     </footer>
   );
 };
