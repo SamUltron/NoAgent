@@ -12,14 +12,14 @@ export const users = [
     },
     {
         id: 2,
-        image: circle2,
+        image: circle3,
         name: "James Olamide",
         userDescription: "Property Owner",
         testimony: "As a landlord, I've found quality tenants faster and saved on commission fees. The verification process gave me peace of mind about who I'm renting to."
     },
     {
         id: 3,
-        image: circle3,
+        image: circle2,
         name: "Aisha Oluwatobi",
         userDescription: "Student",
         testimony: "As a student, I've found quality hostel that is clean, secured and i saved a lot off the commission fee."

@@ -32,7 +32,7 @@ const Signupp = () => {
 
     setTimeout(() => {
       setIsLoading(false);
-      navigate("/"); 
+      navigate("/home"); 
     }, 1500); 
   };
 

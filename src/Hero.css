@@ -1,9 +1,11 @@
+/* Reset CSS */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Hero Section Background */
 .hero-bg {
   width: 100%;
   position: relative;
@@ -12,13 +14,21 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero-bg::after{
+
+/* Background Overlay */
+.hero-bg::after {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: -1; /* Make sure overlay is behind everything */
   background-color: rgba(45, 43, 43, 0.8);
+}
+
+/* Input and Interactive elements should be on top */
+input {
+  z-index: 100 ; /* Make sure input is on top of the background overlay */
+  position: relative; /* Ensure it is positioned correctly in the DOM flow */
 }
